@@ -11,7 +11,7 @@ body {
     font-family: 'Montserrat', sans-serif;
 
     min-height: 100vh;
-    background-image: url('../../../img/background-stars.png');
+    position: relative;
 
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -20,5 +20,16 @@ body {
         "main main"
         "footer footer"
     ;
+
+    #bg-stars {
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+        position: fixed;
+        top: 0;
+        left: 0;
+        filter: grayscale(100%);
+        z-index: -100;
+    }
 }
 

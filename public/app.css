@@ -10,10 +10,23 @@ body {
   font-family: "Montserrat Alternates", sans-serif;
   font-family: "Montserrat", sans-serif;
   min-height: 100vh;
-  background-image: url(/images/background-stars.png?cda8b516f77aa8542b88ea5b49730379);
+  position: relative;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-areas: "header header" "main main" "footer footer";
+}
+
+body #bg-stars {
+  width: 100vw;
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  z-index: -100;
 }
 
 header {
@@ -32,10 +45,11 @@ header nav.menu {
   position: fixed;
   top: 0px;
   transition: all 400ms;
+  z-index: 10;
 }
 
 header .stycky {
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.9);
   max-height: 60px;
 }
 
@@ -216,6 +230,52 @@ header .close {
 header section.jumbo {
   width: 100%;
   height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+
+header section.jumbo .jumbo-left {
+  width: 50%;
+  height: 100%;
+  position: relative;
+  z-index: -10;
+}
+
+header section.jumbo .jumbo-left img {
+  position: absolute;
+}
+
+header section.jumbo .jumbo-left img#all-sun {
+  top: -100px;
+  left: -500px;
+  width: clamp(600px, 120vw, 1350px);
+}
+
+header section.jumbo .jumbo-left img#half-sun {
+  top: -100px;
+  left: -500px;
+  width: clamp(600px, 120vw, 1350px);
+}
+
+header section.jumbo .jumbo-left img#orbita {
+  top: 19%;
+  left: -400px;
+  width: clamp(600px, 130vw, 1700px);
+}
+
+header section.jumbo .jumbo-right {
+  width: 50%;
+  height: 100%;
+  position: relative;
+}
+
+header section.jumbo .jumbo-right #gab-mer {
+  width: clamp(250px, 80%, 400px);
+  position: absolute;
+  top: 42%;
+  left: 50%;
 }
 
 main {
