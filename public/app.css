@@ -231,51 +231,45 @@ header section.jumbo {
   width: 100%;
   height: 100vh;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   flex-direction: row;
 }
 
-header section.jumbo .jumbo-left {
-  width: 50%;
+header section.jumbo .jumbo-container {
+  width: 100%;
   height: 100%;
   position: relative;
   z-index: -10;
 }
 
-header section.jumbo .jumbo-left img {
+header section.jumbo .jumbo-container #all-sun {
   position: absolute;
-}
-
-header section.jumbo .jumbo-left img#all-sun {
   top: -100px;
-  left: -500px;
-  width: clamp(600px, 120vw, 1350px);
+  left: -1000px;
+  width: clamp(1340px, 175%, 2550px);
 }
 
-header section.jumbo .jumbo-left img#half-sun {
-  top: -100px;
-  left: -500px;
-  width: clamp(600px, 120vw, 1350px);
+header section.jumbo .jumbo-container .gab-mer {
+  display: none;
 }
 
-header section.jumbo .jumbo-left img#orbita {
-  top: 19%;
-  left: -400px;
-  width: clamp(600px, 130vw, 1700px);
-}
+@media screen and (max-width: 992px) {
+  header .jumbo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
 
-header section.jumbo .jumbo-right {
-  width: 50%;
-  height: 100%;
-  position: relative;
-}
+  header .jumbo-container #all-sun {
+    display: none;
+  }
 
-header section.jumbo .jumbo-right #gab-mer {
-  width: clamp(250px, 80%, 400px);
-  position: absolute;
-  top: 42%;
-  left: 50%;
+  header .jumbo-container img#gab-mer {
+    max-width: 70%;
+    display: inline-block;
+  }
 }
 
 main {

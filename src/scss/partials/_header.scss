@@ -170,80 +170,73 @@ header {
             text-decoration: none;
         }
 
-        /* ********** MEDIA QUERY HAMBURGER-MENU ********* */
+    /* ********** MEDIA QUERY HAMBURGER-MENU ********* */
 
-        @media screen and (max-width: 1260px) {
-            .nav-right ul {
+    @media screen and (max-width: 1260px) {
+        .nav-right ul {
+            display: none;
+        }
+
+        .nav-right > a {
+            display: flex;
+            height: 100%;
+            line-height: 70px;
+            color: #888;
+            font-size: 24px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hamburger-menu.active {
+            display: block;
+            z-index: 10;
+        }
+    }
+
+
+
+    // ************* JUMBOTRON SECTION * * *
+
+    section.jumbo {
+        width: 100%;
+        height: 100vh;
+
+        @include my-flex (center, center, row);
+
+        .jumbo-container {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            z-index:-10;
+
+            #all-sun {
+                position: absolute;
+                top: -100px;
+                left: -1000px;
+                width: clamp(1340px, 175%, 2550px);
+            }
+
+            .gab-mer {
+                display: none;
+            }
+        }
+    }
+
+
+    @media screen and (max-width: 992px) {
+
+        .jumbo-container {
+
+            @include my-flex (center, center, row);
+
+            #all-sun {
                 display: none;
             }
 
-            .nav-right > a {
-                display: flex;
-                height: 100%;
-                line-height: 70px;
-                color: #888;
-                font-size: 24px;
-                justify-content: center;
-                align-items: center;
-            }
-
-            .hamburger-menu.active {
-                display: block;
-                z-index: 10;
+            img#gab-mer {
+                max-width: 70%;
+                display: inline-block;
             }
         }
-
-
-
-        // ************* JUMBOTRON SECTION * * *
-
-        section.jumbo {
-            width: 100%;
-            height: 100vh;
-
-            @include my-flex (space-between, center, row);
-
-            .jumbo-left {
-                width: 50%;
-                height: 100%;
-                position: relative;
-                z-index:-10;
-
-                img {
-                    position: absolute;
-
-                    &#all-sun {
-                        top: -100px;
-                        left: -500px;
-                        width: clamp(600px, 120vw, 1350px);
-                    }
-
-                    &#half-sun {
-                        top: -100px;
-                        left: -500px;
-                        width: clamp(600px, 120vw, 1350px);
-                    }
-
-                    &#orbita {
-                        top: 19%;
-                        left: -400px;
-                        width: clamp(600px, 130vw, 1700px);
-                    }
-                }
-            }
-
-            .jumbo-right {
-                width: 50%;
-                height: 100%;
-                position: relative;
-
-                #gab-mer {
-                    width: clamp(250px, 80%, 400px);
-                    position: absolute;
-
-                    top: 42%;
-                    left: 50%;
-                }
-            }
-        }
+    }
 }
