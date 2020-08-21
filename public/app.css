@@ -1,0 +1,245 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  min-height: 100vh;
+  background-image: url(/images/background-stars.png?cda8b516f77aa8542b88ea5b49730379);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "header header" "main main" "footer footer";
+}
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+  grid-area: header;
+  min-height: 100vh;
+  /* ********** MEDIA QUERY HAMBURGER-MENU ********* */
+}
+
+header nav.menu {
+  width: 100%;
+  height: 90px;
+  position: fixed;
+  top: 0px;
+  transition: all 400ms;
+}
+
+header .stycky {
+  background-color: rgba(255, 255, 255, 0.7);
+  max-height: 60px;
+}
+
+header .container {
+  margin: auto;
+  width: clamp(280px, 80%, 1600px);
+  height: 100%;
+}
+
+header nav .nav-left {
+  float: left;
+  width: 20%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+header nav .nav-left a {
+  -webkit-text-decoration: nome;
+          text-decoration: nome;
+  transition: 300ms;
+  padding-top: 4px;
+}
+
+header nav .nav-left a:hover {
+  transform: scale(1.1);
+}
+
+header .st0 {
+  fill: #E74021;
+}
+
+header .st1 {
+  fill: #4E4D4D;
+}
+
+header nav .nav-right {
+  float: right;
+  width: 80%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+header .nav-right ul {
+  display: flex;
+  align-items: center;
+}
+
+header .nav-right ul li:not(:last-child) {
+  margin-right: 40px;
+  position: relative;
+}
+
+header .nav-right ul a {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #222;
+  letter-spacing: 0.5px;
+  transition: all 300ms;
+}
+
+header .nav-right ul a:hover {
+  color: #F93B13;
+}
+
+header .nav-right ul a::after {
+  content: "";
+  top: -12px;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  background-color: #F93B13;
+  border-radius: 50%;
+  transition: all 500ms;
+  opacity: 0;
+}
+
+header .nav-right ul a:not(.social):hover::after {
+  opacity: 1;
+}
+
+header .nav-right .contact {
+  padding: 8px 15px;
+  border: 1px solid #F93B13;
+  border-radius: 20px;
+}
+
+header .nav-right .contact:hover {
+  color: #fff;
+  background-color: #F93B13;
+}
+
+header .nav-right a.social {
+  font-size: 22px;
+  font-weight: 400;
+}
+
+header .nav-right a.social:not(:last-child) {
+  margin-right: 5px;
+}
+
+header .nav-right > a {
+  display: none;
+}
+
+header .hamburger-menu {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  display: none;
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  min-width: 100vw;
+  min-height: 100vh;
+  background-color: #790E0E;
+}
+
+header .hamburger-menu ul {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  list-style: none;
+}
+
+header .hamburger-menu ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 22px;
+}
+
+header .hamburger-menu ul li {
+  padding: 30px 20px;
+}
+
+header .hamburger-menu ul li a.social:not(:last-child) {
+  margin-right: 20px;
+}
+
+header .close {
+  display: block;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  color: white;
+  font-size: 35px;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1260px) {
+  header .nav-right ul {
+    display: none;
+  }
+
+  header .nav-right > a {
+    display: flex;
+    height: 100%;
+    line-height: 70px;
+    color: #888;
+    font-size: 24px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  header .hamburger-menu.active {
+    display: block;
+    z-index: 10;
+  }
+}
+
+header section.jumbo {
+  width: 100%;
+  height: 100vh;
+}
+
+main {
+  background-color: darkblue;
+  grid-area: main;
+  min-height: 100vh;
+}
+
+footer {
+  background-color: darkgreen;
+  grid-area: footer;
+  min-height: 200px;
+}
+
+footer ul li a {
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #222;
+  letter-spacing: 0.5px;
+  transition: all 300ms;
+}
+
+footer ul li a:hover {
+  color: #F93B13;
+}
+

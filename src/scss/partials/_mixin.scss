@@ -1,0 +1,16 @@
+
+@mixin my-flex($justify, $align, $direction) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+}
+
+@mixin my-grid($teplate-col) {
+    display: grid;
+    grid-template-columns: $teplate-col;
+}
+
+@mixin my-button() {
+    
+}
