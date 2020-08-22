@@ -3,9 +3,9 @@ $(document).ready(function () {
     // SKYCKY NAV-MENU ON SCROLL
     $(window).scroll(function () {
         if ($(document).scrollTop() > 100) {
-            $('nav.menu').addClass('stycky');
+            $('.container').addClass('stycky');
         } else {
-            $('nav.menu').removeClass('stycky');
+            $('.container').removeClass('stycky');
         }
     });
 

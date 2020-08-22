@@ -1,27 +1,32 @@
 header {
+
     @include my-flex(flex-end, center, column);
 
     grid-area: header;
-    min-height: 100vh;
+    position: relative;
 
-        nav.menu {
+
+        .container {
+            margin: auto;
             width: 100%;
             height: 90px;
             position: fixed;
             top: 0px;
+            left: 0px;
+            padding: 0px 10%;
+        }
+
+        nav.menu {
+            width: 100%;
+            height: 100%;
             transition: all 400ms;
-            z-index: 10;
+            z-index: 50;
         }
 
         .stycky {
-            background-color: rgba(255, 255, 255, 0.9);
+            background-color: rgba(255, 255, 255, 0.98);
             max-height: 60px;
-        }
-
-        .container {
-            margin: auto;
-            width: clamp(280px, 80%, 1600px);
-            height: 100%;
+            z-index: 50;
         }
 
         nav .nav-left {
@@ -92,6 +97,7 @@ header {
                 background-color: $first-red;
                 border-radius: 50%;
                 transition: all 500ms;
+                transform: translateX(-50%);
                 opacity: 0;
             }
 
@@ -181,7 +187,7 @@ header {
             display: flex;
             height: 100%;
             line-height: 70px;
-            color: #888;
+            color: $first-red;
             font-size: 24px;
             justify-content: center;
             align-items: center;
@@ -199,7 +205,7 @@ header {
 
     section.jumbo {
         width: 100%;
-        height: 100vh;
+        height: clamp(400px, 80vh, 100vh);
 
         @include my-flex (center, center, row);
 
@@ -211,9 +217,9 @@ header {
 
             #all-sun {
                 position: absolute;
-                top: -100px;
+                top: -150px;
                 left: -1000px;
-                width: clamp(1340px, 175%, 2550px);
+                width: clamp(1340px, 170%, 2550px);
             }
 
             .gab-mer {

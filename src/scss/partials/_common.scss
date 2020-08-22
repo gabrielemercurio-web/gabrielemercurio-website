@@ -31,5 +31,10 @@ body {
         filter: grayscale(100%);
         z-index: -100;
     }
+
+    strong {
+        font-weight: 800;
+        color: $second-red;
+    }
 }
 
