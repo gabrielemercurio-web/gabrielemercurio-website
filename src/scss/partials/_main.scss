@@ -1,6 +1,6 @@
 main {
     grid-area: main;
-    padding: 30% 0px;
+    padding-top: 30%;
 
     .container-main {
         margin: auto;
@@ -219,11 +219,13 @@ main {
 
         .digital-skill {
 
+            margin-bottom: 10%;
+
             .autoplay {
                 width: 60%;
                 margin: auto;
                 display: grid;
-                grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+                grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
                 grid-gap: 50px;
 
                 .slide {

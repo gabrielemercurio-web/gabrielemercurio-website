@@ -301,7 +301,7 @@ header section.jumbo .jumbo-container .gab-mer {
 
 main {
   grid-area: main;
-  padding: 30% 0px;
+  padding-top: 30%;
 }
 
 main .container-main {
@@ -523,11 +523,15 @@ main #skills .personal-skill div p {
   line-height: 1.8rem;
 }
 
+main #skills .digital-skill {
+  margin-bottom: 10%;
+}
+
 main #skills .digital-skill .autoplay {
   width: 60%;
   margin: auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
   grid-gap: 50px;
 }
 
@@ -602,21 +606,41 @@ main #skills .digital-skill .autoplay .slide img {
 }
 
 footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
   background-color: #AF3C32;
   grid-area: footer;
   min-height: 200px;
 }
 
+footer h2 {
+  font-size: 1rem;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+footer ul li {
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+
 footer ul li a {
-  font-size: 24px;
+  font-size: 26px;
   font-weight: 700;
   text-transform: uppercase;
-  color: #222;
+  color: #fff;
   letter-spacing: 0.5px;
   transition: all 300ms;
+  padding: 10px;
 }
 
 footer ul li a:hover {
-  color: #F93B13;
+  transform: scale(1.2);
 }
 

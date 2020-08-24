@@ -1,20 +1,38 @@
 
 footer {
+    @include my-flex(center, center, column);
+    width: 100vw;
+
     background-color: $second-red;
     grid-area: footer;
 
     min-height: 200px;
 
-    ul li a {
-        font-size: 24px;
-        font-weight: 700;
-        text-transform: uppercase;
-        color: #222;
-        letter-spacing: 0.5px;
-        transition: all 300ms;
+    h2 {
+        font-size: 1rem;
+        color: #fff;
+        margin-bottom: 20px;
+    }
 
-        &:hover {
-            color: $first-red;
+    ul {
+        li {
+            width: 200px;
+            @include my-flex(space-between, center, row);
+
+            a {
+                font-size: 26px;
+                font-weight: 700;
+                text-transform: uppercase;
+                color: #fff;
+                letter-spacing: 0.5px;
+                transition: all 300ms;
+                padding: 10px;
+
+                &:hover {
+                    transform: scale(1.20);
+                }
+            }
         }
+
     }
 }
