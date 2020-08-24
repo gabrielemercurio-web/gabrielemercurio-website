@@ -10,18 +10,20 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@800&family=Montserrat:wght@400;800&display=swap"
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/03e5ee274f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
     <link rel="stylesheet" href="public/app.css">
 </head>
 
-<body>
+<body id="body-top">
 
     <header>
-        <section class="container">
+        <section class="container nav-menu">
 
             <nav class="menu">
 
                 <div class="nav-left">
-                    <a href="#">
+                    <a href="www.gabrielemercurio.com">
                         <svg width="50"; height="50" style="enable-background:new 0 0 57.3 54.1;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
                             y="0px" viewBox="0 0 57.3 54.1">
                             <path id="Path_17" class="st0" d="M53.2,13.4c-2.4-4-5.9-7.4-10.1-9.6c-4.5-2.4-9.4-3.6-14.5-3.5c-5-0.1-10,1.1-14.5,3.5
@@ -33,10 +35,10 @@
                 </div>
                 <div class="nav-right">
                     <ul>
-                        <li><a href="#"> About Me </a></li>
-                        <li><a href="#"> My Works </a></li>
-                        <li><a href="#"> Skylls </a></li>
-                        <li><a class="contact" href="#"> Contact </a></li>
+                        <li><a href="#about"> About Me </a></li>
+                        <li><a href="#work"> My Works </a></li>
+                        <li><a href="#skills"> Skylls </a></li>
+                        <li><a class="contact" href="#contact"> Contact Me </a></li>
                     </ul>
                     <a href="#">
                         <i class="fas fa-bars"></i>
@@ -78,7 +80,7 @@
 
             <section id="about" class="about">
                 <div class="about-left">
-                    <h1 class="about-title">About me</h1>
+                    <h1 id="about" class="about-title">About me</h1>
                     <p class="about-text">
                         Hi, I’m Gabriele! I have always been intrigued by fields such as <strong>programming and technology</strong>, so much so that today I’m
                         Junior <strong>Full Stack Web Developer</strong>, with an educational background and skills in the <strong>Graphic Design field</strong>.
@@ -96,7 +98,7 @@
 
         </div>
 
-            <section class="project">
+            <section id="work" class="project">
                 <div class="bg-project"></div>
                 <div class="container-main row">
                     <div class="slider">
@@ -108,14 +110,14 @@
                         <img class="slide" src="img/digital-ocean.png" alt="lavoro6-gabriele-mercurio">
                         <img class="slide" src="img/hubspot.png" alt="lavoro7-gabriele-mercurio">
                         <img class="slide" src="img/boolify.png" alt="lavoro8-gabriele-mercurio">
-                        <div class="back"><i class="fas fa-angle-left"></i></div>
-                        <div class="next"><i class="fas fa-angle-right"></i></div>
+                        <div class="back" id="arrow-slider-hide"><i class="fas fa-angle-left"></i></div>
+                        <div class="next" id="arrow-slider-hide"><i class="fas fa-angle-right"></i></div>
                     </div>
-                    <div class="slider-text">
-                        <h1>MY PROJECT</h1>
+                    <span class="slider-text active">
+                        <h1>"Boolzap"</h1>
                         <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
                         magna aliquyam erat, sed diam voluptua.</p>
-                        <a href="#" target="_blank">
+                        <a href="https://github.com/gabrielemercurio-web/js-html-css-boolzap" target="_blank">
                             <svg viewBox="0 0 25.8 25.3">
                                 <g transform="translate(0 -5.329)">
                                     <g transform="translate(0 5.329)">
@@ -130,8 +132,195 @@
                             </svg>
                             Watch Code
                         </a>
+                    </span>
+                    <span class="slider-text">
+                        <h1>"Boolflix"</h1>
+                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
+                        <a href="https://github.com/gabrielemercurio-web/ajax-ex-boolflix" target="_blank">
+                            <svg viewBox="0 0 25.8 25.3">
+                                <g transform="translate(0 -5.329)">
+                                    <g transform="translate(0 5.329)">
+                                        <path class="st0"
+                                            d="M12.9,0C5.7,0,0,5.9,0,13c0,5.5,3.6,10.5,8.8,12.2c0.6,0.1,0.9-0.3,0.9-0.6c0-0.3,0-1.1,0-2.2
+                            			c-3.6,0.8-4.3-1.7-4.3-1.7c-0.2-0.8-0.7-1.5-1.4-1.9C2.7,18,4,18,4,18c0.8,0.1,1.6,0.6,2,1.3c0.7,1.3,2.4,1.8,3.7,1.1c0,0,0,0,0,0
+                            			c0.1-0.7,0.3-1.3,0.8-1.7c-2.9-0.3-5.9-1.4-5.9-6.4C4.7,11,5.1,9.7,6,8.8C5.6,7.7,5.7,6.5,6.1,5.4c0,0,1.1-0.3,3.5,1.3
+                            			c2.1-0.6,4.3-0.6,6.5,0c2.5-1.7,3.5-1.3,3.5-1.3c0.5,1.1,0.5,2.3,0.1,3.4c0.9,0.9,1.3,2.2,1.3,3.5c0,5-3,6.1-5.9,6.4
+                            			c0.6,0.6,0.9,1.5,0.9,2.4c0,1.7,0,3.1,0,3.6c0,0.3,0.2,0.8,0.9,0.6c6.8-2.3,10.4-9.7,8.1-16.4C23.3,3.6,18.4,0,12.9,0z" />
+                                    </g>
+                                </g>
+                            </svg>
+                            Watch Code
+                        </a>
+                    </span>
+                    <span class="slider-text">
+                        <h1>CSS Filter Training</h1>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <a href="https://github.com/gabrielemercurio-web/js-jq-ajax-api-musica" target="_blank">
+                            <svg viewBox="0 0 25.8 25.3">
+                                <g transform="translate(0 -5.329)">
+                                    <g transform="translate(0 5.329)">
+                                        <path class="st0"
+                                            d="M12.9,0C5.7,0,0,5.9,0,13c0,5.5,3.6,10.5,8.8,12.2c0.6,0.1,0.9-0.3,0.9-0.6c0-0.3,0-1.1,0-2.2
+                            			c-3.6,0.8-4.3-1.7-4.3-1.7c-0.2-0.8-0.7-1.5-1.4-1.9C2.7,18,4,18,4,18c0.8,0.1,1.6,0.6,2,1.3c0.7,1.3,2.4,1.8,3.7,1.1c0,0,0,0,0,0
+                            			c0.1-0.7,0.3-1.3,0.8-1.7c-2.9-0.3-5.9-1.4-5.9-6.4C4.7,11,5.1,9.7,6,8.8C5.6,7.7,5.7,6.5,6.1,5.4c0,0,1.1-0.3,3.5,1.3
+                            			c2.1-0.6,4.3-0.6,6.5,0c2.5-1.7,3.5-1.3,3.5-1.3c0.5,1.1,0.5,2.3,0.1,3.4c0.9,0.9,1.3,2.2,1.3,3.5c0,5-3,6.1-5.9,6.4
+                            			c0.6,0.6,0.9,1.5,0.9,2.4c0,1.7,0,3.1,0,3.6c0,0.3,0.2,0.8,0.9,0.6c6.8-2.3,10.4-9.7,8.1-16.4C23.3,3.6,18.4,0,12.9,0z" />
+                                    </g>
+                                </g>
+                            </svg>
+                            Watch Code
+                        </a>
+                    </span>
+                    <span class="slider-text">
+                        <h1>"CSS Animation Training"</h1>
+                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                        magna aliquyam erat, sed diam voluptua.</p>
+                        <a href="https://github.com/gabrielemercurio-web/html-css-animation-filter" target="_blank">
+                            <svg viewBox="0 0 25.8 25.3">
+                                <g transform="translate(0 -5.329)">
+                                    <g transform="translate(0 5.329)">
+                                        <path class="st0"
+                                            d="M12.9,0C5.7,0,0,5.9,0,13c0,5.5,3.6,10.5,8.8,12.2c0.6,0.1,0.9-0.3,0.9-0.6c0-0.3,0-1.1,0-2.2
+                            			c-3.6,0.8-4.3-1.7-4.3-1.7c-0.2-0.8-0.7-1.5-1.4-1.9C2.7,18,4,18,4,18c0.8,0.1,1.6,0.6,2,1.3c0.7,1.3,2.4,1.8,3.7,1.1c0,0,0,0,0,0
+                            			c0.1-0.7,0.3-1.3,0.8-1.7c-2.9-0.3-5.9-1.4-5.9-6.4C4.7,11,5.1,9.7,6,8.8C5.6,7.7,5.7,6.5,6.1,5.4c0,0,1.1-0.3,3.5,1.3
+                            			c2.1-0.6,4.3-0.6,6.5,0c2.5-1.7,3.5-1.3,3.5-1.3c0.5,1.1,0.5,2.3,0.1,3.4c0.9,0.9,1.3,2.2,1.3,3.5c0,5-3,6.1-5.9,6.4
+                            			c0.6,0.6,0.9,1.5,0.9,2.4c0,1.7,0,3.1,0,3.6c0,0.3,0.2,0.8,0.9,0.6c6.8-2.3,10.4-9.7,8.1-16.4C23.3,3.6,18.4,0,12.9,0z" />
+                                    </g>
+                                </g>
+                            </svg>
+                            Watch Code
+                        </a>
+                    </span>
+                    <span class="slider-text">
+                        <h1>JS Carousel Training</h1>
+                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                        magna aliquyam erat, sed diam voluptua.</p>
+                        <a href="https://github.com/gabrielemercurio-web/js-jq-carousel" target="_blank">
+                            <svg viewBox="0 0 25.8 25.3">
+                                <g transform="translate(0 -5.329)">
+                                    <g transform="translate(0 5.329)">
+                                        <path class="st0"
+                                            d="M12.9,0C5.7,0,0,5.9,0,13c0,5.5,3.6,10.5,8.8,12.2c0.6,0.1,0.9-0.3,0.9-0.6c0-0.3,0-1.1,0-2.2
+                            			c-3.6,0.8-4.3-1.7-4.3-1.7c-0.2-0.8-0.7-1.5-1.4-1.9C2.7,18,4,18,4,18c0.8,0.1,1.6,0.6,2,1.3c0.7,1.3,2.4,1.8,3.7,1.1c0,0,0,0,0,0
+                            			c0.1-0.7,0.3-1.3,0.8-1.7c-2.9-0.3-5.9-1.4-5.9-6.4C4.7,11,5.1,9.7,6,8.8C5.6,7.7,5.7,6.5,6.1,5.4c0,0,1.1-0.3,3.5,1.3
+                            			c2.1-0.6,4.3-0.6,6.5,0c2.5-1.7,3.5-1.3,3.5-1.3c0.5,1.1,0.5,2.3,0.1,3.4c0.9,0.9,1.3,2.2,1.3,3.5c0,5-3,6.1-5.9,6.4
+                            			c0.6,0.6,0.9,1.5,0.9,2.4c0,1.7,0,3.1,0,3.6c0,0.3,0.2,0.8,0.9,0.6c6.8-2.3,10.4-9.7,8.1-16.4C23.3,3.6,18.4,0,12.9,0z" />
+                                    </g>
+                                </g>
+                            </svg>
+                            Watch Code
+                        </a>
+                    </span>
+                    <span class="slider-text">
+                        <h1>Layout Training</h1>
+                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                        magna aliquyam erat, sed diam voluptua.</p>
+                        <a href="https://github.com/gabrielemercurio-web/html-css-digitalocean" target="_blank">
+                            <svg viewBox="0 0 25.8 25.3">
+                                <g transform="translate(0 -5.329)">
+                                    <g transform="translate(0 5.329)">
+                                        <path class="st0"
+                                            d="M12.9,0C5.7,0,0,5.9,0,13c0,5.5,3.6,10.5,8.8,12.2c0.6,0.1,0.9-0.3,0.9-0.6c0-0.3,0-1.1,0-2.2
+                            			c-3.6,0.8-4.3-1.7-4.3-1.7c-0.2-0.8-0.7-1.5-1.4-1.9C2.7,18,4,18,4,18c0.8,0.1,1.6,0.6,2,1.3c0.7,1.3,2.4,1.8,3.7,1.1c0,0,0,0,0,0
+                            			c0.1-0.7,0.3-1.3,0.8-1.7c-2.9-0.3-5.9-1.4-5.9-6.4C4.7,11,5.1,9.7,6,8.8C5.6,7.7,5.7,6.5,6.1,5.4c0,0,1.1-0.3,3.5,1.3
+                            			c2.1-0.6,4.3-0.6,6.5,0c2.5-1.7,3.5-1.3,3.5-1.3c0.5,1.1,0.5,2.3,0.1,3.4c0.9,0.9,1.3,2.2,1.3,3.5c0,5-3,6.1-5.9,6.4
+                            			c0.6,0.6,0.9,1.5,0.9,2.4c0,1.7,0,3.1,0,3.6c0,0.3,0.2,0.8,0.9,0.6c6.8-2.3,10.4-9.7,8.1-16.4C23.3,3.6,18.4,0,12.9,0z" />
+                                    </g>
+                                </g>
+                            </svg>
+                            Watch Code
+                        </a>
+                    </span>
+                    <span class="slider-text">
+                        <h1>Layout Training</h1>
+                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                        magna aliquyam erat, sed diam voluptua.</p>
+                        <a href="https://github.com/gabrielemercurio-web/htmlcss-hubspot" target="_blank">
+                            <svg viewBox="0 0 25.8 25.3">
+                                <g transform="translate(0 -5.329)">
+                                    <g transform="translate(0 5.329)">
+                                        <path class="st0"
+                                            d="M12.9,0C5.7,0,0,5.9,0,13c0,5.5,3.6,10.5,8.8,12.2c0.6,0.1,0.9-0.3,0.9-0.6c0-0.3,0-1.1,0-2.2
+                            			c-3.6,0.8-4.3-1.7-4.3-1.7c-0.2-0.8-0.7-1.5-1.4-1.9C2.7,18,4,18,4,18c0.8,0.1,1.6,0.6,2,1.3c0.7,1.3,2.4,1.8,3.7,1.1c0,0,0,0,0,0
+                            			c0.1-0.7,0.3-1.3,0.8-1.7c-2.9-0.3-5.9-1.4-5.9-6.4C4.7,11,5.1,9.7,6,8.8C5.6,7.7,5.7,6.5,6.1,5.4c0,0,1.1-0.3,3.5,1.3
+                            			c2.1-0.6,4.3-0.6,6.5,0c2.5-1.7,3.5-1.3,3.5-1.3c0.5,1.1,0.5,2.3,0.1,3.4c0.9,0.9,1.3,2.2,1.3,3.5c0,5-3,6.1-5.9,6.4
+                            			c0.6,0.6,0.9,1.5,0.9,2.4c0,1.7,0,3.1,0,3.6c0,0.3,0.2,0.8,0.9,0.6c6.8-2.3,10.4-9.7,8.1-16.4C23.3,3.6,18.4,0,12.9,0z" />
+                                    </g>
+                                </g>
+                            </svg>
+                            Watch Code
+                        </a>
+                    </span>
+                    <span class="slider-text">
+                        <h1>"Boolify"</h1>
+                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                        magna aliquyam erat, sed diam voluptua.</p>
+                        <a href="https://github.com/gabrielemercurio-web/html-css-spotifyweb" target="_blank">
+                            <svg viewBox="0 0 25.8 25.3">
+                                <g transform="translate(0 -5.329)">
+                                    <g transform="translate(0 5.329)">
+                                        <path class="st0"
+                                            d="M12.9,0C5.7,0,0,5.9,0,13c0,5.5,3.6,10.5,8.8,12.2c0.6,0.1,0.9-0.3,0.9-0.6c0-0.3,0-1.1,0-2.2
+                            			c-3.6,0.8-4.3-1.7-4.3-1.7c-0.2-0.8-0.7-1.5-1.4-1.9C2.7,18,4,18,4,18c0.8,0.1,1.6,0.6,2,1.3c0.7,1.3,2.4,1.8,3.7,1.1c0,0,0,0,0,0
+                            			c0.1-0.7,0.3-1.3,0.8-1.7c-2.9-0.3-5.9-1.4-5.9-6.4C4.7,11,5.1,9.7,6,8.8C5.6,7.7,5.7,6.5,6.1,5.4c0,0,1.1-0.3,3.5,1.3
+                            			c2.1-0.6,4.3-0.6,6.5,0c2.5-1.7,3.5-1.3,3.5-1.3c0.5,1.1,0.5,2.3,0.1,3.4c0.9,0.9,1.3,2.2,1.3,3.5c0,5-3,6.1-5.9,6.4
+                            			c0.6,0.6,0.9,1.5,0.9,2.4c0,1.7,0,3.1,0,3.6c0,0.3,0.2,0.8,0.9,0.6c6.8-2.3,10.4-9.7,8.1-16.4C23.3,3.6,18.4,0,12.9,0z" />
+                                    </g>
+                                </g>
+                            </svg>
+                            Watch Code
+                        </a>
+                    </span>
+                </div>
+            </section>
+
+            <section id="skills">
+
+                <h1>Personal Skills</h1>
+                <div class="personal-skill container-main">
+                    <div>
+                        <img src="img/space-fair.svg" alt="fair">
+                        <p>In dealing with others I am a fair, honest and direct person.</p>
+                    </div>
+                    <div>
+                        <img src="img/space-huttle-precision.svg" alt="precision">
+                        <p>Precision and timeliness are my objectives at work, as they are in my daily life.</p>
+                    </div>
+                    <div>
+                        <img src="img/astronaut-mask.svg" alt="mask">
+                        <p>I always try to be faithful to myself and not hide behind a mask.</p>
                     </div>
                 </div>
+
+                <h1>Digital Skills</h1>
+                <div class="digital-skill container-main">
+
+                    <div class="autoplay">
+                        <div class="slide"><img src="images/photoshop.png"></div>
+                        <div class="slide"><img src="images/illustator.png"></div>
+                        <div class="slide"><img src="images/adobe-xd.png"></div>
+                        <div class="slide"><img src="images/html5.png"></div>
+                        <div class="slide"><img src="images/css3.png"></div>
+                        <div class="slide"><img src="images/javascript.png"></div>
+                        <div class="slide"><img src="images/laravel.png"></div>
+                        <div class="slide"><img src="images/after-effects.png"></div>
+                        <div class="slide"><img src="images/premiere.png"></div>
+                        <div class="slide"><img src="images/jquery.png"></div>
+                        <div class="slide"><img src="images/bootstrap.png"></div>
+                        <div class="slide"><img src="images/mysql.png"></div>
+                        <div class="slide"><img src="images/vue-js.png"></div>
+                        <div class="slide"><img src="images/sass.png"></div>
+                        <div class="slide"><img src="images/npm.png"></div>
+                        <div class="slide"><img src="images/wordpress.png"></div>
+                        <div class="slide"><img src="images/elementor-pro.png"></div>
+                        <div class="slide"><img src="images/google-web-design.png"></div>
+                        <div class="slide"><img src="images/php.png"></div>
+                        <div class="slide"><img src="images/indesign.png"></div>
+                        <div class="slide"><img src="images/ajax.png"></div>
+                    </div>
+
+                </div>
+
             </section>
 
     </main>
@@ -139,17 +328,23 @@
     <footer>
         <ul>
             <li>
-                <a class="social" href="#"> <i class="fab fa-linkedin"></i> </a>
-                <a class="social" href="#"> <i class="fab fa-github"></i> </a>
-                <a class="social" href="#"> <i class="fas fa-envelope"></i> </a>
-                <a class="social" href="#"> <i class="fab fab fa-telegram"></i> </a>
+                <a class="social" href="https://www.linkedin.com/in/gabriele-mercurio/"> <i class="fab fa-linkedin"></i> </a>
+                <a class="social" href="https://github.com/gabrielemercurio-web"> <i class="fab fa-github"></i> </a>
+                <a class="social" href="mailto:gabrielemercurio.web@gmail.com"> <i class="fas fa-envelope"></i> </a>
+                <a class="social" href="https://t.me/GabrieleMercurio"> <i class="fab fab fa-telegram"></i> </a>
             </li>
         </ul>
     </footer>
 
     <img id="bg-stars" src="img/background-stars.svg" alt="background-stars">
+    <a class="scroll-top-none" href="#body-top"><img src="img/up-planet.svg" alt="up-planet"></a>
 
+    <!-- <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+        integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script> JQuery UI Script -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> <!-- JQuery Script -->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
     <script src="public/app.js" charset="utf-8"></script> <!-- My JS Code Script -->
 </body>
 
