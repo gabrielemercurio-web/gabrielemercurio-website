@@ -96,7 +96,7 @@
 $(document).ready(function () {
   // *** SKYCKY NAV-MENU ON SCROLL
   $(window).scroll(function () {
-    if ($(document).scrollTop() > 100) {
+    if ($(document).scrollTop() > 250) {
       $('.container').addClass('stycky');
       $('body a').addClass('scroll-top');
     } else {
