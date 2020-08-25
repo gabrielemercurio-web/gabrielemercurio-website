@@ -103,15 +103,25 @@ $(document).ready(function () {
       $('.container').removeClass('stycky');
       $('body a').removeClass('scroll-top');
     }
-  }); // *** Hamburger Menu OPEN e CLOSE
+  }); // *** Hamburger Menu OPEN e CLOSE + LINK
 
   $(".fa-bars").click(function () {
     $(".hamburger-menu").addClass("active");
-    $('.images').hide();
   });
   $(".fa-times").click(function () {
     $(".hamburger-menu").removeClass("active");
-    $('.images').show();
+  });
+  $('.hamburger-menu .hb-about').click(function () {
+    $(".hamburger-menu").removeClass("active");
+  });
+  $('.hamburger-menu .hb-work').click(function () {
+    $(".hamburger-menu").removeClass("active");
+  });
+  $('.hamburger-menu .hb-skills').click(function () {
+    $(".hamburger-menu").removeClass("active");
+  });
+  $('.hamburger-menu .hb-form').click(function () {
+    $(".hamburger-menu").removeClass("active");
   }); // *** AUTO-SLIDER *** BACK *** NEXT
   // Ogni 3 secondi le slide si alternano
 
