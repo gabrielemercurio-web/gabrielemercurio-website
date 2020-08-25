@@ -30,10 +30,10 @@ body #bg-stars {
 }
 
 body .scroll-top-none {
-  width: 4rem;
+  width: 3rem;
   position: fixed;
-  bottom: 30px;
-  right: 30px;
+  bottom: 20px;
+  right: 20px;
   z-index: 99;
   transition: 200ms;
   display: none;
@@ -59,6 +59,7 @@ header {
   flex-direction: column;
   grid-area: header;
   position: relative;
+  height: 100vh;
   /* ********** MEDIA QUERY HAMBURGER-MENU ********* */
 }
 
@@ -272,7 +273,7 @@ header section.jumbo .jumbo-container {
 
 header section.jumbo .jumbo-container #all-sun {
   position: absolute;
-  top: -150px;
+  top: -350px;
   left: -1000px;
   width: clamp(1340px, 170%, 2550px);
 }
@@ -301,7 +302,7 @@ header section.jumbo .jumbo-container .gab-mer {
 
 main {
   grid-area: main;
-  padding-top: 30%;
+  padding-top: 20%;
 }
 
 main .container-main {
@@ -440,15 +441,19 @@ main .project .row .slider-text {
 main .project .row .active {
   grid-column: 3/4;
   grid-row: 4/6;
+  color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   flex-direction: column;
-  color: #fff;
 }
 
 main .project .row .active h1 {
   text-transform: uppercase;
+}
+
+main .project .row .active p {
+  line-height: 1.5rem;
 }
 
 main .project .row .active a {
@@ -612,7 +617,7 @@ footer {
   flex-direction: column;
   width: 100vw;
   min-height: 600px;
-  padding: 100px 0px 40px 0px;
+  padding: 100px 20px 40px 20px;
   background-color: #AF3C32;
   grid-area: footer;
 }
@@ -632,7 +637,7 @@ footer div {
 }
 
 footer ul li {
-  width: 200px;
+  width: 220px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -662,7 +667,7 @@ footer #form form {
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
-  min-width: 400px;
+  min-width: 100%;
   min-height: 250px;
 }
 
@@ -676,7 +681,7 @@ footer #form form input {
 }
 
 footer #form form textarea {
-  min-width: 400px;
+  min-width: 100%;
   min-height: 100px;
   border-style: solid;
   border-width: 2px 2px 4px 2px;

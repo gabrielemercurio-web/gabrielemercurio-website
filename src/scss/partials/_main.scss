@@ -1,6 +1,6 @@
 main {
     grid-area: main;
-    padding-top: 30%;
+    padding-top: 20%;
 
     .container-main {
         margin: auto;
@@ -140,12 +140,17 @@ main {
                 grid-column: 3 / 4;
                 grid-row: 4 / 6;
 
+                color: #fff;
+
                 @include my-flex(space-between, flex-start, column);
 
                 h1 {
                     text-transform: uppercase;
                 }
-                color: #fff;
+
+                p {
+                    line-height: 1.5rem;
+                }
 
                 a {
                     @include my-flex(center, center, row);

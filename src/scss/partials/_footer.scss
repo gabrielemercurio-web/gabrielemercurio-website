@@ -3,7 +3,7 @@ footer {
     @include my-flex(center, center, column);
     width: 100vw;
     min-height: 600px;
-    padding: 100px 0px 40px 0px;
+    padding: 100px 20px 40px 20px;
 
     background-color: $second-red;
     grid-area: footer;
@@ -22,7 +22,7 @@ footer {
 
     ul {
         li {
-            width: 200px;
+            width: 220px;
             @include my-flex(space-between, center, row);
 
             a {
@@ -44,12 +44,12 @@ footer {
 
 
     #form {
-        
+
         text-align: center;
 
         form {
         @include my-flex(space-between, center, column);
-        min-width: 400px;
+        min-width: 100%;
         min-height: 250px;
 
         textarea,
@@ -62,7 +62,7 @@ footer {
         }
 
         textarea {
-            min-width: 400px;
+            min-width: 100%;
             min-height: 100px;
             border-style: solid;
             border-width: 2px 2px 4px 2px;
