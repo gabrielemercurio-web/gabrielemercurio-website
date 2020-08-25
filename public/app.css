@@ -273,7 +273,7 @@ header section.jumbo .jumbo-container {
 
 header section.jumbo .jumbo-container #all-sun {
   position: absolute;
-  top: -350px;
+  top: 20%;
   left: -1000px;
   width: clamp(1340px, 170%, 2550px);
 }
