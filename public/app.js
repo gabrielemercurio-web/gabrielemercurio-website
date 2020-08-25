@@ -102,25 +102,32 @@ $(document).ready(function () {
     } else {
       $('.container').removeClass('stycky');
       $('body a').removeClass('scroll-top');
+      $('body').show();
     }
   }); // *** Hamburger Menu OPEN e CLOSE + LINK
 
   $(".fa-bars").click(function () {
     $(".hamburger-menu").addClass("active");
+    $('.nav-left, .nav-right, .jumbo, main, footer').hide();
   });
   $(".fa-times").click(function () {
+    $('.nav-left, .nav-right, .jumbo, main, footer').show();
     $(".hamburger-menu").removeClass("active");
   });
   $('.hamburger-menu .hb-about').click(function () {
+    $('.nav-left, .nav-right, .jumbo, main, footer').show();
     $(".hamburger-menu").removeClass("active");
   });
   $('.hamburger-menu .hb-work').click(function () {
+    $('.nav-left, .nav-right, .jumbo, main, footer').show();
     $(".hamburger-menu").removeClass("active");
   });
   $('.hamburger-menu .hb-skills').click(function () {
+    $('.nav-left, .nav-right, .jumbo, main, footer').show();
     $(".hamburger-menu").removeClass("active");
   });
   $('.hamburger-menu .hb-form').click(function () {
+    $('.nav-left, .nav-right, .jumbo, main, footer').show();
     $(".hamburger-menu").removeClass("active");
   }); // *** AUTO-SLIDER *** BACK *** NEXT
   // Ogni 3 secondi le slide si alternano
