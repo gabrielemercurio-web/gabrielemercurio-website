@@ -1,3 +1,6 @@
+import anime from 'animejs/lib/anime.es.js';
+
+
 $(document).ready(function () {
 
     // *** SKYCKY NAV-MENU ON SCROLL
@@ -54,7 +57,7 @@ $(document).ready(function () {
 
     function slideSwitch() {
 
-        var img_corrente = $('.visible');
+        var img_corrente = $('img.visible');
         // recupero il pallino corrente
         var testo_corrente = $('.slider-text.active');
 
@@ -62,7 +65,7 @@ $(document).ready(function () {
         // tolgo la classe active al pallino corrente
         testo_corrente.removeClass('active');
 
-        img_successiva = img_corrente.next('img');
+        var img_successiva = img_corrente.next('img');
         // recupero il pallino successivo
         var testo_successivo = testo_corrente.next('.slider-text');
 
@@ -79,7 +82,7 @@ $(document).ready(function () {
     var theInterval;
 
     function startSlide() {
-        theInterval = setInterval(slideSwitch, 3000);
+        theInterval = setInterval(slideSwitch, 5000);
     }
 
     function stopSlide() {
@@ -212,7 +215,11 @@ $(document).ready(function () {
     //     autoplaySpeed: 2000,
     // });
 
+    anime({
+        target: '.nav-left svg',
+    });
 
+    var rellax = new Rellax('.rellax');
 
 
 }); // Chiusura document.ready

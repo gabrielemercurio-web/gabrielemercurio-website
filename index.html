@@ -29,7 +29,7 @@
             <nav class="menu">
 
                 <div class="nav-left">
-                    <a href="#">
+                    <a href="#body-top">
                         <svg width="50"; height="50" style="enable-background:new 0 0 57.3 54.1;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
                             y="0px" viewBox="0 0 57.3 54.1">
                             <path id="Path_17" class="st0" d="M53.2,13.4c-2.4-4-5.9-7.4-10.1-9.6c-4.5-2.4-9.4-3.6-14.5-3.5c-5-0.1-10,1.1-14.5,3.5
@@ -76,16 +76,23 @@
         <section class="jumbo">
             <div class="jumbo-container">
                 <img id="all-sun" src="img/all-sun.svg" alt="all-sun">
-                <img class="gab-mer" id="gab-mer" src="img/gab-mer.svg" alt="gabriele-mercurio">
+                <img class="gab-mer" id="gab-mer" src="img/gab-mer.svg" alt="gabriele-mercurio"> <!-- Mobile header -->
             </div>
+            <!-- Parallax element -->
+            <img class="moon-shadow rellax" data-rellax-speed="2" src="img/Group -4.svg" alt="eclipse-mercurio-parallax">
         </section>
+
+        <!-- Parallax element -->
+        <img class="eclipse rellax" data-rellax-speed="2" src="img/Group 42.svg"
+            alt="eclipse-mercurio-parallax">
+
     </header>
 
     <main>
         <div class="container-main">
 
             <section id="about" class="about">
-                <div class="about-left">
+                <div class="rellax about-left" data-rellax-speed=2">
                     <h1 id="about" class="about-title">About me</h1>
                     <p class="about-text">
                         Hi, I’m Gabriele! I have always been intrigued by fields such as <strong>programming and technology</strong>, so much so that today I’m
@@ -98,7 +105,8 @@
                     </p>
                 </div>
                 <div id="about-right" class="about-right">
-                    <img src="img/gab-mer-photo.svg" alt="Foto Gabriele Mercurio">
+                    <img class="photo-gab-mer" src="img/gab-mer-photo.svg" alt="Foto Gabriele Mercurio">
+                    <img class="moon-shadow-2 rellax" data-rellax-speed="8" data-rellax-percentage="0.5" src="img/Group 48.svg" alt="Parallax element moon-shadow">
                 </div>
             </section>
 
@@ -354,11 +362,12 @@
 
     </footer>
 
-    <img id="bg-stars" src="img/background-stars.svg" alt="background-stars">
+    <img class="rellax" data-rellax-speed="3" id="bg-stars" src="img/background-stars.svg" alt="background-stars">
     <a class="scroll-top-none" href="#body-top"><img src="img/up-planet.svg" alt="up-planet"></a>
 
-    <!-- <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
-        integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script> JQuery UI Script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js"
+        integrity="sha512-f5HTYZYTDZelxS7LEQYv8ppMHTZ6JJWglzeQmr0CVTS70vJgaJiIO15ALqI7bhsracojbXkezUIL+35UXwwGrQ=="
+        crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> <!-- JQuery Script -->
     <script src="public/app.js" charset="utf-8"></script> <!-- My JS Code Script -->
 </body>

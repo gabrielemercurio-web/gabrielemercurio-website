@@ -40,9 +40,18 @@ main {
             display: flex;
             justify-content: flex-end;
             align-items: center;
+            position: relative;
 
-            img {
+            img.photo-gab-mer {
                 width: clamp(250px, 80%, 100%);
+                z-index: 10;
+            }
+
+            img.moon-shadow-2 {
+                position: absolute;
+                left: 30px;
+                width: clamp(250px, 80%, 100%);
+                z-index: 5;
             }
         }
     }
