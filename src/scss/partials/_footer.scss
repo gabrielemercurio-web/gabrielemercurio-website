@@ -2,7 +2,6 @@
 footer {
     @include my-flex(center, center, column);
     width: 100vw;
-    min-height: 600px;
     padding: 100px 20px 40px 20px;
 
     background-color: $second-red;
@@ -16,7 +15,6 @@ footer {
 
     div {
         @include my-flex(space-between, center, column);
-        margin-top: 100px;
         
     }
 
